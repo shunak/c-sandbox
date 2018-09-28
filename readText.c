@@ -10,7 +10,7 @@ void main(){
         exit(1);
     }
     fprintf(file,"Hello World!!\r\n");
-    fprintf(file,"ABCDEF\r\f");
+    fprintf(file,"ABCDEF\r\n");
     fclose(file);
 }
 
