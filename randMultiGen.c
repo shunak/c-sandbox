@@ -14,7 +14,9 @@ void main()
         a = rand() % 10 + 1;
         b = rand() % 10 + 1;
         
-        printf("%d + %d = %d\n", a, b, a + b);
+        printf("%d × %d = %d\n", a, b, a * b);
+        printf("%d × %d = \n", a, b);
+        
     }
 
 }
