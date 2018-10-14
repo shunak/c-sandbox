@@ -16,7 +16,6 @@ for(i=0;i<strlen(s);i++){
     }
 }
 
-
 printf("%s\n",s);
 
 }
