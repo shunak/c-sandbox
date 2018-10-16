@@ -2,30 +2,22 @@
 #include <stdlib.h>
 #include <time.h>
 
+void twice(int *d){
 
+    for(int i = 0; i < 5; i++)
+    {
+        d[i]=2*d[i];
+        printf("%d ",d[i]);
+    }
 
+    printf("\n");
 
-
-
-void twice(){
-
-
-
-    
 }
 
 
+ void disp_rand(int *a){
 
-void disp_rand(int a[]){
-
-    printf("発生した乱数:\n");
-    srand((unsigned) time(NULL));
-    int b;
-    for(int i = 0; i < 5; i++)
-    {
-
-        b = rand() % 100 + 1;
-        a[i]=b;
+    for(int i = 0; i < 5; i++){
 
         printf("%d ", a[i]);
 
@@ -35,17 +27,29 @@ void disp_rand(int a[]){
 }
 
 
-
-
-
-
 void main(){
 
+    int b[5];
+    srand((unsigned) time(NULL));
+    
+    for(int i = 0; i < 5; i++)
+    {
+     b[i]=rand()%100 + 1;
+    }
+    
+    printf("発生した乱数:\n");
 
-    int a[5];
+    disp_rand(b);
 
-    disp_rand(a);
+    printf("二倍にした値\n");
 
+    twice(b);
+    // disp_rand(twice(*b));
+    // printf("%p ",a[5]);
+    // printf("\n");
+    // printf(twice(b));
+    
+    // twice(disp_rand(a));
 
 }
 
