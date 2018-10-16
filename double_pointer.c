@@ -44,12 +44,8 @@ void main(){
     printf("二倍にした値\n");
 
     twice(b);
-    // disp_rand(twice(*b));
-    // printf("%p ",a[5]);
-    // printf("\n");
-    // printf(twice(b));
-    
-    // twice(disp_rand(a));
+
+    return 0;
 
 }
 
